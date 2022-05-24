@@ -1,0 +1,26 @@
+*  Printer 1 purchased and scrapped (no steppers v.v but lots of encoders!)
+Connect linear motors to motor driver with push buttons
+Add limit switches to linear tracks (tactile buttons?)
+Access encoders
+Determine linear distance ratios
+Write software capable of processing simple instruction lists
+Build basic geography of x-y robot
+<------------------------ tuning geography will likely be an ongoing effort from here on
+Create end-effector carrage 
+Attach pen and try to draw something
+Create chuck to hold cutting bit <- robot will have to be structurally solid for this to not go very badly 
+Create parts using bot to improve structure, clean things up
+
+Probe salvaged screen to understand how it works
+Modify screen to display text
+Edit software to display useful text (job name, progress, errors, how awesome I am, ect)
+Connect buttons on screen to handle functions (start, stop, clear, home ect.)
+Build the screen a nice lil house :D
+
+test z-axis motor with sofware
+Build z axis structure and driver
+Test z-axis independantly 
+Attach x,y to z axis
+Modify software to raise and lower z during cutting, test engraving at different elevations?
+
+
