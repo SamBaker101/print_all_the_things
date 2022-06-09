@@ -48,8 +48,7 @@ void loop() {
   distance = enc_count * DMULTIPLIER;
   Serial.println(distance);
   delay(100);
-
-  digitalWrite(MOTOR_NEG, HIGH);
+  
 }
 
 
@@ -63,7 +62,7 @@ void home_axis(){
   do{
     digitalWrite(MOTOR_NEG, HIGH);
     last_enc_count = enc_count;
-    delay(5);
+    delay(1500);
     }while(last_enc_count != enc_count);
 
     digitalWrite(MOTOR_NEG, LOW);
