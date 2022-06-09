@@ -1,34 +1,30 @@
 //Sam Baker - 05/23/2022
-//Testing Salvaged Encoder
-//Blue gives expected encoder output, yellow appears to always be high
-//Unclear if yellow is damaged or this is usual operation
+//Testing Epson linear rail with DC motor and encoder
+//encoder currently only outputting one digital signal (so no directional iformation available)
+//Using L298 motor controller for tests
 
-#define YELLOW_WIRE 7
-#define BLUE_WIRE 6
+#define ENC_I 2
 
-  struct wires{
-    int yellow;
-    int blue;
-    }; 
+//counts posedges from encoder
+int enc_count = 0;
 
 void setup() {
   //Feedback
   Serial.begin(115200);
   
-  //Unidentified Encoder Outputs
-  pinMode(YELLOW_WIRE, INPUT);
-  pinMode(BLUE_WIRE, INPUT);
+  //Input from encoder (Blue wire from carrage)
+  pinMode(ENC_I, INPUT);
+  attachInterrupt(0, enc_ISR, RISING);
   }
 
 
 void loop() {
-  wires test_wires = {0, 0};  
-  
-  test_wires.yellow = digitalRead(YELLOW_WIRE);
-  test_wires.blue = digitalRead(BLUE_WIRE);
-
-  //Serial.println(test_wires.yellow);
-  Serial.println(test_wires.blue);
-  
-  delay(1);
+  Serial.println(enc_count);
+  delay(100);
 }
+
+
+//increment enc_counter when input from encoder goes high
+void enc_ISR(){
+  enc_count ++;
+  }
