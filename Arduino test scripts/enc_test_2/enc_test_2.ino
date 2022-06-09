@@ -3,10 +3,12 @@
 //encoder currently only outputting one digital signal (so no directional iformation available)
 //Using L298 motor controller for tests
 
+//10cm approx 736 posedge
+
 #define ENC_I 2
 
-//Experimental
-#define DMULTIPLIER 1.0
+//This is not suuuper accurate but will work for now
+#define DMULTIPLIER 10.0/736
 
 //counts posedges from encoder
 int enc_count = 0;
