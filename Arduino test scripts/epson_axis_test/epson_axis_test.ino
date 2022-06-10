@@ -20,6 +20,7 @@
 //This is not suuuper accurate but will work for now
 #define DMULTIPLIER 10.0/736
 
+//At 12V only works at full output (100% duty cycle)
 #define PWM_DUTY 100
 
 //counts posedges from encoder
@@ -90,7 +91,7 @@ void home_axis(){
   do{
     digitalWrite(MOTOR_NEG, HIGH);
     last_enc_count = enc_count;
-    delay(1500);
+    delay(2500);
     }while(last_enc_count != enc_count);
     
     digitalWrite(MOTOR_NEG, LOW);
