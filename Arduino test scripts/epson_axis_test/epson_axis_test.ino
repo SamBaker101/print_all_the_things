@@ -46,8 +46,13 @@ void setup() {
   
   //Input from encoder (Blue wire from carrage)
   pinMode(ENC_I, INPUT);
-  attachInterrupt(0, enc_ISR, RISING);
 
+  //Interrupts
+  attachInterrupt(0, enc_ISR, RISING);
+  //Would like to use interrupts for control as well
+  //Why does the arduino only have two interrupt GPIOs... v.v
+  
+    
   //set motor speed
   int set_duty = (255*PWM_DUTY)/100;
   analogWrite(MOTOR_PWM, set_duty);
