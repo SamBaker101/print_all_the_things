@@ -3,6 +3,18 @@ bed_x 300
 bed_y 235
 length_y 500
 length_x 400
-y_track_len 385
-y_track_wid 265
+
+//Molded scanner track from printer for y axis actuation
+y_track_l 385
+y_track_w 265
 y_track_h 35 .. 45
+y_track_trav 300
+
+//Salvaged structural members (from a patio umbrella)
+umb_rail_h 18.20
+umb_rail_w 12.25
+
+//Subject to change (main structural members)
+umb_len_y 500 2
+umb_len_x 400 2
+umb_len_z 400 2
