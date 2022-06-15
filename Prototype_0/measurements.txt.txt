@@ -1,0 +1,8 @@
+//mm
+bed_x 300
+bed_y 235
+length_y 500
+length_x 400
+y_track_len 385
+y_track_wid 265
+y_track_h 35 .. 45
