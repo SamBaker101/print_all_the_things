@@ -5,10 +5,10 @@
 //COIL 1 ORANGE -> BROWN?
 //COIL 2 YELLOW -> BLACK?
 
-//Cycling ORANGE -> YELLOW -> ORANGE -> YELLOW  --  Rotates counter clockwise
-//Cycling BROWN -> BLACK -> BROWN -> BLACK -- Rotates clockwise
+//Cycling ORANGE -> YELLOW  --  Rotates counter clockwise
+//Cycling BROWN -> BLACK -- Rotates clockwise
 //These are very weak/shaky (5v, low current and incomplete stepping)
-
+//Time to build a controller...
 
 
 
