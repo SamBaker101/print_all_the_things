@@ -18,9 +18,15 @@
     <ClCompile Include="pathfinder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vector\vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pathfinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector\vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

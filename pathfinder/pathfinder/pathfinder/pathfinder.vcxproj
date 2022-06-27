@@ -139,9 +139,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="pathfinder.cpp" />
+    <ClCompile Include="vector\vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pathfinder.h" />
+    <ClInclude Include="vector\vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
