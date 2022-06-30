@@ -12,8 +12,9 @@ to guide the print head around the path
 int main() {
 	std::cout << "Hello World \n";
 
-	Vector myVector(1.2, 2.6, 3.1, 4.5);
-
+	Vector myVector(1, 2.6, 3.1, 4.5);
+	Vector myVector2(10, 2.6, 3.1, 4.5);
+	
 	std::cout << myVector.get_length();
 	
 	return getchar();;
