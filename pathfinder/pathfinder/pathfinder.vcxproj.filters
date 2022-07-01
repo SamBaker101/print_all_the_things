@@ -23,10 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pathfinder.h">
+    <ClInclude Include="vector\vector.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vector\vector.h">
+    <ClInclude Include="pathfinder.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

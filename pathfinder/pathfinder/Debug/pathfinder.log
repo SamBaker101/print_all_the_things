@@ -1,6 +1,4 @@
 ﻿  pathfinder.cpp
-C:\code\print_all_the_things\pathfinder\pathfinder\pathfinder.cpp(15,35): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\code\print_all_the_things\pathfinder\pathfinder\pathfinder.cpp(16,37): warning C4305: 'argument': truncation from 'double' to 'float'
   vector.cpp
   Generating Code...
   pathfinder.vcxproj -> C:\code\print_all_the_things\pathfinder\Debug\pathfinder.exe

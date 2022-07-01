@@ -142,8 +142,8 @@
     <ClCompile Include="vector\vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pathfinder.h" />
-    <ClInclude Include="vector\vector.h" />
+    <ClInclude Include="pathfinder.hpp" />
+    <ClInclude Include="vector\vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

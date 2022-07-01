@@ -7,7 +7,7 @@ to guide the print head around the path
 */
 
 
-#include "pathfinder.h"
+#include "pathfinder.hpp"
 
 int main() {
 	std::cout << "Hello World \n";
@@ -15,6 +15,8 @@ int main() {
 	Vector myVector(1, 2.6, 3.1, 4.5);
 	Vector myVector2(10, 2.6, 3.1, 4.5);
 	
+	myVector.print_vector();
+
 	std::cout << myVector.get_length();
 	
 	return getchar();;
