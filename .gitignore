@@ -29,3 +29,5 @@ pathfinder/pathfinder/Debug/pathfinder.tlog/CL.write.1.tlog
 pathfinder/Debug/pathfinder.exe
 *.exe
 *.tlog
+*.tlog
+*.exe
