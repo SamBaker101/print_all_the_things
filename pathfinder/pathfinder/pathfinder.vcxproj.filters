@@ -21,6 +21,9 @@
     <ClCompile Include="vector\vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="filehandler\filehandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vector\vector.hpp">
@@ -29,5 +32,11 @@
     <ClInclude Include="pathfinder.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="filehandler\filehandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\points.txt" />
   </ItemGroup>
 </Project>

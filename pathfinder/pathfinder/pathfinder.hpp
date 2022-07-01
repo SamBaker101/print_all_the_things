@@ -4,7 +4,15 @@
 #include <iostream>
 
 
+
 //Local includes
 #include "vector/vector.hpp"
-#include "filehandler/filehandler.h"
+#include "filehandler/filehandler.hpp"
 
+
+//
+
+
+
+//defines
+#define POINTFILE_PATH "data/points.txt"

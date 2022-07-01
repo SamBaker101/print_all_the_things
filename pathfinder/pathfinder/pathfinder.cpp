@@ -9,9 +9,13 @@ to guide the print head around the path
 
 #include "pathfinder.hpp"
 
-int main() {
-	std::cout << "Hello World \n";
 
+//At this time this is primarily just a test function for modules
+int main() {
+	using std::cout;
+
+	cout << "Hello World \n";
+	/*
 	Vector myVector(1, 2.6, 3.1, 4.5);
 	Vector myVector2(10, 2.6, 3.1, 4.5);
 	
@@ -19,7 +23,16 @@ int main() {
 	
 	myVector3.print_vector();
 
-	std::cout << myVector3.get_length();
-	
+	cout << myVector3.get_length();
+	*/
+
+	PointFile FileTest(POINTFILE_PATH);
+
+	FileTest.file_exists();
+
+	cout << FileTest.line_length() << "\n";
+	cout << FileTest.line_length() << "\n";
+	cout << FileTest.line_length() << "\n";
+
 	return getchar();;
 }
