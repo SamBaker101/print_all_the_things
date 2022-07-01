@@ -15,9 +15,11 @@ int main() {
 	Vector myVector(1, 2.6, 3.1, 4.5);
 	Vector myVector2(10, 2.6, 3.1, 4.5);
 	
-	myVector.print_vector();
+	Vector myVector3 = myVector + myVector2;
+	
+	myVector3.print_vector();
 
-	std::cout << myVector.get_length();
+	std::cout << myVector3.get_length();
 	
 	return getchar();;
 }

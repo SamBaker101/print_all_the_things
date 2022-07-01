@@ -43,9 +43,9 @@ Scalar_t Vector::get_angle() {
 
 //Prints Vector details (primarily for debugging
 void Vector::print_vector() {
-	std::cout << "Start: (" << start_x << ',' << start_y << ") \n";
-	std::cout << "End  : (" << end_x << ',' << end_y << ") \n";
-	std::cout << "Len  : (" << len_x << ',' << len_y << ") \n";
+	std::cout << "Start: \t ( " << start_x << " , " << start_y << " ) \n";
+	std::cout << "End  : \t ( " << end_x << " , " << end_y << " ) \n";
+	std::cout << "Len  : \t ( " << len_x << " , " << len_y << " ) \n";
 }
 
 

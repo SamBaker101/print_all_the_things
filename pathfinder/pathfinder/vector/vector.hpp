@@ -22,6 +22,7 @@ private:
 	Scalar_t len_x;
 
 public:
+	//Overloaded constructors
 	Vector() {
 		start_x = -1;
 		start_y = -1;
@@ -40,20 +41,24 @@ public:
 		len_x = end_x - start_x;
 	}
 
+	//Setter functions, len will be automatically modified when called
+	void set_start(Scalar_t x, Scalar_t y);
+	void set_end(Scalar_t x, Scalar_t y);
+
+	//Simple getter functions
 	const Scalar_t get_start_x() const;
 	const Scalar_t get_start_y() const;
 	const Scalar_t get_end_x() const;
 	const Scalar_t get_end_y() const;
 	const Scalar_t get_len_x() const;
 	const Scalar_t get_len_y() const;
-
-
-	void set_start(Scalar_t x, Scalar_t y);
-	void set_end(Scalar_t x, Scalar_t y);
-	void print_vector();
+	
+	//Getters requiring computations
 	Scalar_t get_length();
 	Scalar_t get_angle();
 
+	//Prints Vector details (primarily for debugging
+	void print_vector();
 };
 
 //Operator Overloads for vector addition and subtraction
