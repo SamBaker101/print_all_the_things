@@ -56,5 +56,7 @@ public:
 
 };
 
+//Operator Overloads for vector addition and subtraction
+//Resulting vector will start at V1's starting point and add the len of v2 to its tip
 Vector operator+(const Vector v1, const Vector v2);
 Vector operator-(const Vector v1, const Vector v2);
