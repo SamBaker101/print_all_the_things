@@ -28,13 +28,27 @@ void PointFile::file_exists() {
 
 int PointFile::line_length() {
 	int line_count = 0;
-	std::string string;
+	std::string string_buffer;
 	
+	std::ifstream ifs(path);
+
 	//This isn't working yet
-	while (std::getline(file, string)) {
+	while (!ifs.eof()) {
+	std::getline(ifs, string_buffer);
 		++line_count;
 	}
-
 	
 	return line_count;
+}
+
+
+void PointFile::print_file() {
+	std::string string_buffer;
+	std::ifstream ifs(path);
+
+	//This isn't working yet
+	while (!ifs.eof()) {
+		std::getline(ifs, string_buffer);
+		std::cout << string_buffer << "\n";
+	}
 }

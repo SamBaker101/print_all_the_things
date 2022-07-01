@@ -10,9 +10,5 @@
 #include "filehandler/filehandler.hpp"
 
 
-//
-
-
-
 //defines
 #define POINTFILE_PATH "data/points.txt"

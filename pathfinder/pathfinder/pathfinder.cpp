@@ -30,9 +30,10 @@ int main() {
 
 	FileTest.file_exists();
 
-	cout << FileTest.line_length() << "\n";
-	cout << FileTest.line_length() << "\n";
-	cout << FileTest.line_length() << "\n";
+	cout << "Line Count: " << FileTest.line_length() << "\n";
+	FileTest.print_file();
+
+
 
 	return getchar();;
 }

@@ -25,4 +25,7 @@ class PointFile {
 		//Get data from file
 		void file_exists();
 		int line_length();
+
+		//Print function
+		void print_file();
 };
