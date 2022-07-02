@@ -51,3 +51,18 @@ void PointFile::print_file() {
 		std::cout << string_buffer << "\n";
 	}
 }
+
+void PointFile::create_array(int num_points, Vector *points) {
+	std::string string_buffer;
+	std::ifstream ifs(path);
+	int x, y;
+	char seperator;
+	int line_count = 0;
+
+	while (!ifs.eof()) {
+		
+		ifs >> x >> y;
+		points[line_count] = Vector(x, y);
+		line_count++;
+	}
+}

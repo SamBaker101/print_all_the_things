@@ -29,11 +29,19 @@ int main() {
 	PointFile FileTest(POINTFILE_PATH);
 
 	FileTest.file_exists();
-
-	cout << "Line Count: " << FileTest.line_length() << "\n";
+	const int length = FileTest.line_length();
+	cout << "Line Count: " << length << "\n";
 	FileTest.print_file();
 
+	cout << " Creating Array \n";
+	Vector *point_array = new Vector[length];
 
+	FileTest.create_array(length, point_array);
 
+	for (int i = 0; i < length; i++) {
+		point_array[i].print_vector();
+	}
+
+	delete point_array;
 	return getchar();;
 }

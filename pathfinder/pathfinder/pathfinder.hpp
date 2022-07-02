@@ -12,3 +12,5 @@
 
 //defines
 #define POINTFILE_PATH "data/points.txt"
+
+#define DOF 2;

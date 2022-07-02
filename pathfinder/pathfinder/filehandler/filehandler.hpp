@@ -31,4 +31,9 @@ class PointFile {
 
 		//Print function
 		void print_file();
+
+		//Create Point Array
+		void create_array(int num_points, Vector *points);
 };
+
+		
