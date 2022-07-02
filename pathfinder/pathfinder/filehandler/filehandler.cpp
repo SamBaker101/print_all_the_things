@@ -46,7 +46,6 @@ void PointFile::print_file() {
 	std::string string_buffer;
 	std::ifstream ifs(path);
 
-	//This isn't working yet
 	while (!ifs.eof()) {
 		std::getline(ifs, string_buffer);
 		std::cout << string_buffer << "\n";
