@@ -6,6 +6,35 @@ Vector module intended to draw vectors between points along path
 
 #include "vector.hpp"
 
+
+//Constructors
+Vector::Vector() {
+	start_x = 0;
+	start_y = 0;
+	end_y = 0;
+	end_x = 0;
+	len_y = 0;
+	len_x = 0;
+}
+
+Vector::Vector(Scalar_t x, Scalar_t y) {
+	start_x = 0;
+	start_y = 0;
+	end_x   = x;
+	end_y   = y;
+	len_y   = end_y - start_y;
+	len_x   = end_x - start_x;
+}
+
+Vector::Vector(Scalar_t start_x_i, Scalar_t start_y_i, Scalar_t end_x_i, Scalar_t end_y_i) {
+	start_x = start_x_i;
+	start_y = start_y_i;
+	end_x = end_x_i;
+	end_y = end_y_i;
+	len_y = end_y - start_y;
+	len_x = end_x - start_x;
+}
+
 //Setter functions, len will be automatically modified when called
 void Vector::set_start(Scalar_t x, Scalar_t y) {
 	start_x = x;

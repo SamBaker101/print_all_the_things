@@ -15,16 +15,16 @@ int main() {
 	using std::cout;
 
 	cout << "Hello World \n";
-	/*
+	
 	Vector myVector(1, 2.6, 3.1, 4.5);
-	Vector myVector2(10, 2.6, 3.1, 4.5);
+	Vector myVector2(3.1, 4.5);
 	
 	Vector myVector3 = myVector + myVector2;
 	
 	myVector3.print_vector();
 
 	cout << myVector3.get_length();
-	*/
+	
 
 	PointFile FileTest(POINTFILE_PATH);
 

@@ -23,24 +23,12 @@ private:
 
 public:
 	//Overloaded constructors
-	Vector() {
-		start_x = -1;
-		start_y = -1;
-		end_y = -1;
-		end_x = -1;
-		len_y = -1;
-		len_x = -1;
-	}
-
-	Vector(Scalar_t start_x_i, Scalar_t start_y_i, Scalar_t end_x_i, Scalar_t end_y_i) {
-		start_x = start_x_i;
-		start_y = start_y_i;
-		end_x = end_x_i;
-		end_y = end_y_i;
-		len_y = end_y - start_y;
-		len_x = end_x - start_x;
-	}
-
+	Vector();
+	Vector(Scalar_t x, Scalar_t y);
+	Vector(Scalar_t start_x_i, Scalar_t start_y_i, Scalar_t end_x_i, Scalar_t end_y_i);
+	
+	
+	
 	//Setter functions, len will be automatically modified when called
 	void set_start(Scalar_t x, Scalar_t y);
 	void set_end(Scalar_t x, Scalar_t y);

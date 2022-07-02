@@ -8,6 +8,9 @@
 #include <fstream>
 #include <string>
 
+#include "../vector/vector.hpp"
+
+
 #define MAX_BUFFER 50            //Maxed buffer len
 
 
