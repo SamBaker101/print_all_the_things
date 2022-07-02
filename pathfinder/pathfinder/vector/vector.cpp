@@ -69,6 +69,19 @@ Scalar_t Vector::get_angle() {
 	return tan(len_y / len_x);
 }
 
+void Vector::move_tail() {
+	start_x = 0;
+	start_y = 0;
+	end_x = len_x;
+	end_y = len_y;
+}
+
+void Vector::move_tail(Scalar_t x, Scalar_t y) {
+	start_x = x;
+	start_y = y;
+	end_x = x + len_x;
+	end_y = y + len_y;
+}
 
 //Prints Vector details (primarily for debugging
 void Vector::print_vector() {
