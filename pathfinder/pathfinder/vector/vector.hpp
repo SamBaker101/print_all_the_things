@@ -33,6 +33,9 @@ public:
 	void set_start(Scalar_t x, Scalar_t y);
 	void set_end(Scalar_t x, Scalar_t y);
 
+	void move_tail();
+	void move_tail(Scalar_t x, Scalar_t y);
+
 	//Simple getter functions
 	const Scalar_t get_start_x() const;
 	const Scalar_t get_start_y() const;

@@ -1,3 +1,2 @@
-﻿  filehandler.cpp
-C:\code\print_all_the_things\pathfinder\pathfinder\filehandler\filehandler.cpp(59,7): warning C4101: 'seperator': unreferenced local variable
+﻿  vector.cpp
   pathfinder.vcxproj -> C:\code\print_all_the_things\pathfinder\Debug\pathfinder.exe

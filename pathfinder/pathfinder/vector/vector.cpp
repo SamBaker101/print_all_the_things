@@ -66,7 +66,7 @@ Scalar_t Vector::get_length() {
 }
 
 Scalar_t Vector::get_angle() {
-	return tan(len_y / len_x);
+	return std::atan2(len_y, len_x);
 }
 
 void Vector::move_tail() {
