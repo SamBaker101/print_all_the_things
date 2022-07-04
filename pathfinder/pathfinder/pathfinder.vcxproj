@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="filehandler\filehandler.cpp" />
     <ClCompile Include="pathfinder.cpp" />
+    <ClCompile Include="testing\test.cpp" />
     <ClCompile Include="vector\vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="filehandler\filehandler.hpp" />
     <ClInclude Include="pathfinder.hpp" />
+    <ClInclude Include="testing\test.hpp" />
     <ClInclude Include="vector\vector.hpp" />
   </ItemGroup>
   <ItemGroup>

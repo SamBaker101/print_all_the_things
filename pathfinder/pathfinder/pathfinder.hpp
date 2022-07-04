@@ -8,6 +8,7 @@
 //Local includes
 #include "vector/vector.hpp"
 #include "filehandler/filehandler.hpp"
+#include "testing/test.hpp"
 
 
 //defines
